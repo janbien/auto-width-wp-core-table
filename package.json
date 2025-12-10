@@ -1,0 +1,13 @@
+{
+  "name": "auto-width-wp-core-table",
+  "version": "1.0.0",
+  "description": "Extends core/table with auto width option",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  }
+}
