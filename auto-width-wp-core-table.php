@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Table Auto Width
+ * Plugin Name: Auto width table option
  * Description: Adds an "Automatic width by content" option to the Table block.
  * Version: 1.0.0
  * Author: Jan Bien
