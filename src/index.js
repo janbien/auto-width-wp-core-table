@@ -72,18 +72,7 @@ addFilter(
 );
 
 /**
- * Add class to the block in the editor and on save.
- * Note: 'blocks.getSaveContent.extraProps' modifies the props passed to the save element.
- * 
- * We also need to make sure the class is applied in the editor. 
- * The 'editor.BlockListBlock' filter adds props to the wrapper in the editor (the block list item). 
- * But core/table renders the table inside. 
- * 
- * Actually, modifying `extraProps` in `getSaveContent` handles the frontend (save).
- * For the editor, `core/table` usually applies attributes to its main wrapper or we might need `editor.BlockListBlock`.
- * However, since we want to target `.wp-block-table.has-auto-width`, we need to ensure that class is there.
- * 
- * Let's try to trust that `extraProps` handles the saved output.
+ * Add class to the block on save.
  */
 
 function addAutoWidthClass(extraProps, blockType, attributes) {
